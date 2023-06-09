@@ -1,34 +1,37 @@
-# Sommaire
+# Table of contents
+1. [Introduction](#introduction)
+2. [REMERCIEMENT](#remerciement)
+3. [ORGANISATION](#organisation)
+    1. [SECTEUR D'ACTIVITÉ](#secteur)
+    2. [SERVICE](#service)
+    3. [MÉTHODE DE TRAVAIL](#methode)
+4. [PROJET DE STAGE ](#projet)
+    1. [OUTILS UTILISÉS](#outil)
+    2. [EXPLICATION](#explication)
+    3. [MISP](#misp)
+    4. [MISP-VAGRANT](#mispv)
+    5. [MISP-PACKER](#packer)
+    6. [APPORT](#apport)
+5. [ROOM 42](#room)
+5. [CONCLUSION](#conclusion)
 
-# Rapport de Projet
-
-## Introduction
-
-Dans le cadre de notre projet, nous avons entrepris d'étudier l'impact des nouvelles technologies sur la société moderne. L'objectif principal de ce rapport est d'analyser les avantages et les inconvénients de ces technologies et de proposer des recommandations pour leur utilisation responsable.
-
-## Méthodologie
-
-Pour mener à bien notre étude, nous avons réalisé une revue de la littérature sur le sujet, en examinant les articles scientifiques, les études de cas et les rapports pertinents. Nous avons également mené des entretiens avec des experts du domaine et réalisé une enquête auprès d'un échantillon représentatif de la population.
-
-## Résultats
-
-Nos recherches ont révélé que les nouvelles technologies ont considérablement transformé notre société, en facilitant la communication, l'accès à l'information et l'automatisation des tâches. Cependant, elles ont également suscité des préoccupations quant à la vie privée, à la sécurité des données et à l'impact sur l'emploi.
-
-## Recommandations
-
-Sur la base de nos résultats, nous formulons les recommandations suivantes :
-
-1. Renforcer la sensibilisation à la protection des données personnelles et mettre en place des réglementations plus strictes pour garantir leur confidentialité.
-2. Investir dans la formation et le développement des compétences pour préparer les travailleurs aux emplois de demain.
-3. Promouvoir une utilisation responsable des technologies, en encourageant une utilisation équilibrée et consciente.
-
-## Conclusion
-
-En conclusion, les nouvelles technologies offrent des opportunités considérables, mais elles nécessitent également une approche réfléchie et responsable. En suivant nos recommandations, nous pouvons maximiser les avantages tout en minimisant les risques associés à leur utilisation.
+<a name="remerciement"></a>
+<a name="organisation"></a>
+<a name="secteur"></a>
+<a name="service"></a>
+<a name="methode"></a>
+<a name="projet"></a>
+<a name="outil"></a>
+<a name="explication"></a>
+<a name="misp"></a>
+<a name="mispv"></a>
+<a name="packer"></a>
+<a name="apport"></a>
+<a name="room"></a>
+<a name="conclusion"></a>
 
 
-
-# INTRODUCTION 
+# INTRODUCTION <a name="introduction"></a> 
 
 
 Dans le cadre de la formation de mon BUT informatique et de l'obtention de la deuxième année de ce diplôme, nous avions pour but, moi ainsi que l'ensemble de mes camarades, de trouver un stage d'une durée de 8 semaines au sein d'une entreprise informatique, au sein de laquelle nous allons être confrontés au monde du travail. Durant cette période de stage, chaque élève se trouve attribué par l'entreprise accueillante un sujet de stage qu'il devra, lors des 2 mois, essayer d'accomplir. Le choix de son stage est donc très important, car nous avons la possibilité de directement baigner dans le même bain que tous nos autres collègues qui, pour la plupart, sont là depuis un petit moment. De plus, cela pourrait constituer un choix crucial dans la poursuite de nos études. Nous avions peut-être un choix d'études fixé avant de commencer notre stage, et ce choix peut changer si l'on a choisi un stage en rapport avec nos choix et qui ne nous a pas plus finalement, ou au contraire, cela pourrait nous conforter dans nos choix.
@@ -41,7 +44,7 @@ Ma mission lors de ce stage concerne l'un des nombreux projets de l'entreprise q
 
 Pour vous présenter mon stage ainsi que mon projet de la manière la plus claire, nous allons tout d'abord commencer à parler de l'entreprise hébergeante afin que l'on ait un peu plus de détails. Nous poursuivrons par expliquer le fonctionnement de l'entreprise. Nous passerons ensuite par la présentation détaillée de mon projet et de tout le travail que j'ai accompli, et nous finirons enfin par une conclusion.
 
-# REMERCIEMENT 
+# REMERCIEMENT <a name="remerciement"></a>
 
 
 Avant de commencer à entrer dans le vif du sujet de mon stage, je tenais à présenter mes remerciements et ma gratitude envers un certain nombre de personnes. Je voudrais tout d'abord présenter mes remerciements et ma reconnaissance à mon tuteur de stage, M. Alexandre Dulaunoy, qui m'a accompagné de la meilleure des façons durant ma période de stage dans l'entreprise CIRCL (Computer Incident Response Center Luxembourg). Sa manière de travailler et sa manière de me suivre ont été, à mon sens, optimales pour le bon déroulement de cette expérience. Il a su me venir en aide tout en se mettant en retrait afin de me donner la possibilité d'en apprendre un maximum sur les outils que j'utilise, et selon moi, cela a été la meilleure manière d'entreprendre les choses.
@@ -52,9 +55,10 @@ Pour continuer sur les professeurs qui me tiennent à cœur de remercier, nous a
 
 Nous pouvons, après avoir passé ce point important, entrer dans le vif du sujet.
 
-# ORGANISATION
+# ORGANISATION <a name="organisation"></a>
 
-## Secteur d'activité 
+
+## SECTEUR D'ACTIVITÉ <a name="secteur"></a>
 L'entreprise Computer Incident Response Center, également appelée CIRCL, est une initiative gouvernementale lancée en 2012 par le gouvernement luxembourgeois opérant dans le domaine de la cybersécurité dans le but de proposer un service de réponse aux menaces de sécurité informatique pour les entités non gouvernementales, les entreprises privées et les collectivités, afin de minimiser les pertes potentielles liées à ces attaques.
 
 Cette organisation est gérée par SMILE (Security Made in Lëtzebuerg), une initiative publique et privée visant à promouvoir la sécurité informatique dans le pays tout en stimulant le développement de l'industrie pour laquelle cette même entreprise fait la promotion, à savoir encore une fois la sécurité informatique.
@@ -70,11 +74,11 @@ Outre le fait que cette société vienne en aide à ceux qui le demandent en cas
 - MISP : MISP est une plateforme de partage d'informations dans laquelle les différentes organisations partagent des informations sur les attaques et les menaces dans le but de mieux les comprendre et de mettre en place de nouvelles mesures pour mieux les contrer.
 
 
-##SERVICE 
+##SERVICE <a name="service"></a>
 
 Comme vous l'aurez maintenant compris, CIRCL se tient à entière disposition des entreprises luxembourgeoises et même au-delà, comme j'ai pu le constater. Des entreprises se retrouvant dans des situations délicates de cyberattaques vont contacter cette organisation qui va directement les prendre en charge en identifiant tout d'abord l'entreprise victime, puis en leur dictant les premiers gestes à avoir afin de minimiser de manière significative les dégâts engendrés et pourront ainsi les accompagner tout au long du processus dans un gage de qualité afin de leur apporter le plus d'aide possible. C'est d'ailleurs l'une des raisons pour lesquelles CIRCL s'est fait un réel nom dans ce secteur, mais pas simplement car outre le fait que cette société vienne en aide à ceux qui le demandent en cas de cyberattaques, elle s'occupe également de la mise en place de certains projets et de leur maintien à long terme, qui existent déjà depuis plusieurs années et qui perdureront dans le futur.
 
-## Méthode de travail
+## MÉTHODE DE TRAVAIL <a name="methode"></a>
 
 Vous l'aurez assimilé, CIRCL va s'occuper de gérer la gestion de plusieurs tâches simultanément. Nous pourrions penser que chacun a une tâche bien précise à accomplir et uniquement cette tâche, mais contrairement à la grande majorité des entreprises, CIRCL ne fonctionne pas de la même manière. Cette dernière est composée de 16 personnes très compétentes mais aussi tout aussi polyvalentes. De ce fait, ils ont la possibilité de chacun faire plusieurs tâches si cela venait à se présenter.
 
@@ -84,9 +88,10 @@ Avec les années cette organisation s'est fait une réelle place dans le monde d
 
 Maintenant que vous vous êtes familiarisé avec cette organisation en apprenant davantage sur ses spécificités, sa création, sa structure sociale et ses projets, nous pouvons passer à la présentation et à l'explication de mon projet de stage.
 
-# PROJET DE STAGE 
+# PROJET DE STAGE <a name="projet"></a>
 
-## OUTILS UTILISÉS
+## OUTILS UTILISÉS <a name="outil"></a>
+
 
 Bien évidemment, au vu de mon sujet de stage, je ne serai pas amené à utiliser des switchs ou des routeurs ou ce genre de choses que l'on a pu pratiquer de nombreuses fois en travaux pratiques de réseaux avancés, par exemple, mais à manipuler exclusivement grâce à un ordinateur comme en cours de virtualisation, par exemple. De ce fait, un ordinateur portable sur lequel je travaille sous Ubuntu 22.04 est le seul outil matériel qui m'a été fourni. En termes de logiciel, j'ai été amené à utiliser principalement Vagrant et VirtualBox.
 
@@ -111,7 +116,8 @@ J'ai bien sûr utilisé d'autres outils que je connaissais, tels que Git ou enco
 Du fait qu'il n'y a pas beaucoup de nouveaux outils matériels et/ou logiciels, instinctivement, une personne peut penser que l'apprentissage de l'utilisation de ces équipements n'est pas si compliqué, mais c'est uniquement lorsque l'on entre dans le vif du sujet que nous mesurons la difficulté, chose que nous allons analyser directement au point suivant.
 
 
-## Explication du but du projet
+## EXPLICATION <a name="explication"></a>
+
 
 Voici l'intitulé de mon sujet tel qu'il m'a été présenté lorsque je faisais mon choix : "MSc Student Internship Position - Improvement of Virtualisation and Orchestration of Training Infrastructure", qui se traduit par "Poste de stage pour étudiant en Master - Amélioration de la virtualisation et de l'orchestration de l'infrastructure de formation". Comme vous pouvez le remarquer, ceci n'est pas un sujet qui est directement adapté à mon niveau d'études, mais lors de mon choix de sujet parmi tous les sujets qui m'étaient proposés, ce sujet m'attirait et m'intéressait plus particulièrement. Hormis le fait que cela soit un sujet extrêmement intéressant, il constitue un réel défi pour moi, car si j'arrive à terme de ce sujet, cela serait extrêmement gratifiant et dans le cas où le niveau serait beaucoup trop élevé pour moi, je pourrais tout de même en retenir que de bonnes choses, car cela m'aura permis de me dépasser en me poussant dans mes retranchements. J'aurais par la même occasion énormément appris, tant par mes recherches que par les manipulations des différents outils qui m'étaient possibles d'utiliser.
 
@@ -120,15 +126,14 @@ Voici l'intitulé de mon sujet tel qu'il m'a été présenté lorsque je faisais
 Il m'est confié comme mission de mettre à jour un dossier composé de plusieurs fichiers de configuration. Dans ce dossier, sont présents plusieurs fichiers, mais je vais travailler sur deux fichiers en particulier. Ce dossier se nomme Misp-Vagrant et est une petite pierre dans l'édifice qu'est MISP, un projet dont on a fait mention précédemment et sur lequel nous allons nous intéresser plus longuement.
 
 
-## MISP 
+## MISP <a name="misp"></a>
 
 MISP est une plateforme de partage mise en place il y a plusieurs années et qui compte aujourd'hui des milliers d'utilisateurs. L'idée de l'élaboration de cette plateforme s'est faite en 2012 suite à une séance de travail durant laquelle a été remarqué le fait que plusieurs personnes au sein de ce groupe de travail travaillaient sur le même logiciel malveillant. Suite à la découverte qu'ils travaillaient tous les deux sur le même sujet, ils ont eu l'idée de vouloir mettre en place une plateforme leur permettant d'échanger leurs connaissances pour minimiser le temps de travail, mais aussi d'éviter la duplication. Ainsi, Christophe Vandeplas, qui travaillait à ce moment-là au CERT pour le ministère belge de la Défense, a présenté son travail qui deviendra par la suite MISP. Pour rappel, Circl est une initiative gouvernementale et est donc considéré en tant que CERT (Computer Emergency Response Team) dans ce pays. Par conséquent, CIRCL est à la tête de cette plateforme open source MISP et gère donc un bon nombre de communautés de partage MISP se basant sur le partage d'informations concernant les menaces et ce de manière active.
 
 Mais concrètement, qu'est-ce que MISP ?
 Vous l'aurez bien compris au vu de mes explications précédentes, MISP est une plateforme de partage dans le domaine de la cybersécurité. Ainsi, elle permet le partage d'informations sur les nouvelles menaces. C'est bien sûr un logiciel open source, c'est-à-dire dont le code est visible publiquement, pouvant être ainsi consulté, modifié et partagé par tout le monde. Il facilite ainsi la collaboration et l'échange d'informations entre plusieurs communautés, nous permettant ainsi de mettre en relation nos informations, mais plus important encore, de les enrichir. Nous n'avons pas tous les mêmes façons de développer et de travailler, et avoir un point de vue et une méthode de travail externe à la nôtre est essentiel en informatique. Conséquemment, on peut relever en quelque sorte différents groupes de divulgation d'informations. Nous avons par exemple les analystes de fraude qui vont partager des indicateurs financiers afin de pouvoir relever des fraudes financières. Nous avons aussi dans le thème les analystes de sécurité qui vont avoir pour rôle de tout d'abord rechercher des indicateurs, bien sûr toujours dans un contexte de sécurité opérationnelle. Ils continueront ensuite par les valider pour ensuite, bien évidemment, les utiliser. Je voudrais tout de même vous présenter un dernier type d'utilisateur, car nous pouvons penser qu'avec les exemples que je viens de vous présenter, seules les personnes directement liées à la cybersécurité utilisent cette plateforme, mais ne perdons pas de vue le but principal de ce projet, bien sûr le partage d'informations, mais plus précisément en termes de sécurité de l'information, donc nécessairement de cybercriminalité, qui sont donc des fraudes et toute fraude doit obligatoirement être punie par la loi. Ce qui nous amène à notre troisième et dernier exemple d'utilisateur qui ne sont autres que les forces de l'ordre, qui vont s'appuyer sur les indicateurs partagés par les experts en cybersécurité afin de soutenir ou encore d'initier leurs enquêtes, leur permettant de répondre de la meilleure manière possible aux incidents. Et à mon sens, c'est à partir de ce moment-là que nous voyons réellement l'aboutissement des recherches entreprises et communiquées par ces personnes. Elles participent activement à la sécurité de tous, et c'est à mon sens une réelle gratification pour elles de œuvrer à la sécurité de la population. Car bien sûr, les forces de l'ordre ne sont pas les seuls organismes de confiance utilisant les services de MISP. Nous avons par exemple le service militaire ou encore le secteur de la finance.
 
-
-## MISP-VAGRANT 
+## MISP-VAGRANT <a name="mispv"></a>
 
 Misp-vagrant est un projet open-source qui apporte la possibilité d'effectuer le déploiement d'une instance MISP et ce de manière très rapide. Et pour cause, ce projet utilise la technologie de la virtualisation dans le but de créer un environnement de déploiement virtuel prêt à l'emploi.
 
@@ -242,7 +247,7 @@ Toutes les modifications que j'ai entreprises ont été faites sur ma machine h�
 Ensuite, j'effectuais la commande "vagrant provision" afin d'exécuter mon script (bootstrap.sh), ce qui me renverrait tous les résultats et me permettrait ainsi de relever les erreurs et d'essayer de les résoudre.
 Voilà une bonne description assez détaillée du travail que j'ai pu effectuer sur le projet Vagrant. Malgré mes heures de travail sur ce projet, celui-ci n'a pas pu être mené à terme en raison de sa grande complexité (pour mon niveau d'études) et du temps qui m'a été accordé pour sa réalisation. C'est pourquoi, au cours de ma cinquième semaine de stage, mon tuteur a décidé de m'attribuer un autre projet qui est semblable à celui-ci, mais qui est tout de même très différent, et nous allons le voir sans plus attendre dans la partie suivante.
 
-## MISP-PACKER 
+## MISP-PACKER <a name="packer"></a>
 
 Maintenant que nous avons fait une étude détaillée sur le projet Misp-Vagrant, passons à l'analyse du second projet qui a été étudié et cette fois réussi à être fini. Pour ce faire, nous allons tout d'abord chercher à savoir ce qu'est Misp-packer, et nous continuerons par expliquer ce que j'ai pu réaliser, et enfin les modifications que j'ai apportées dans ce projet.
 
@@ -324,7 +329,7 @@ Enfin, le dernier point et qui n'est pas des moindres, est mon choix d'étude. L
 
 
 
-# ROOM 42
+# ROOM 42 <a name="room"></a>
 
 J'ai eu lors de ma visite de l'entreprise de visiter la Room 42 et de faire la connaissance de son créateur, Jérom Jacob, qui m'a proposé d'assister à un exercice dans cette salle.
 La Room est une exclusivité mondiale créée par ce dernier il y a déjà plusieurs années. Cette salle consiste à tout simplement mettre des entreprises en état de stress. Pour vous
@@ -358,17 +363,7 @@ Après que l'exercice soit terminé, a lieu un débriefing de tout ce qui vient 
 quels sont leurs points forts ainsi que leurs points faibles. S'ensuit une petite discussion, et l'expérience est à ce moment-là finie et aura au final duré environ une matinée.
 
 
-# CONCLUSION 
+# CONCLUSION <a name="conclusion"></a>
 
 Pour finir ce rapport comme il se doit, nous allons Sur-le-champ passer à la conclusion de notre rapport dans laquelle nous allons reprendre tous les points qui ont été, à mon sens, essentiels tout au long du développement.
 J'ai eu l'honneur, au cours de cette expérimentation, d'intégrer l'organisation prestigieuse qu'est CIRCL, devenue aujourd'hui un acteur majeur dans le domaine de la sécurité informatique au Luxembourg, et qui s'ouvre grâce notamment à ses différents projets sur le plan national et international. Elle compte au sein de son équipe des employés tous aussi accueillants et bienveillants les uns que les autres, tels que Jérom Jacob, qui m'a accordé le privilège d'assister à un exercice au sein de la Room 42 avec une réelle entreprise, ou encore et surtout Alexandre Dulaunoy, qui n'est autre que la personne qui m'a fait l'honneur d'être mon tuteur lors de toute cette période, et qui m'a accompagné de la meilleure des façons pour la réalisation de mon projet. Le projet que j'ai décidé d'entreprendre était assez audacieux au vu de mon niveau d'études et de mes capacités, et compte tenu du temps consacré et de la raison énoncée précédemment, le projet ne pouvait pas aboutir complètement. Néanmoins, il m'a permis d'en apprendre énormément. Misp-vagrant m'a permis de m'améliorer dans la manipulation de machines virtuelles, il m'a notamment fait découvrir des outils tels que Vagrant ou VirtualBox, et bien d'autres choses évidemment. Le deuxième projet qui m'a été attribué, Misp-packer, est dans le même type de travail que mon premier projet, et je pense très sincèrement que la réussite de ce deuxième projet est très fortement due aux connaissances accumulées lors du travail sur misp-vagrant. Il m'a permis de m'adapter plus rapidement et surtout de réussir mon travail, me permettant de faire une pull request sur le dépôt Git officiel de misp-packer et ainsi d'avoir apporté ma pierre à l'édifice dans cet honorable projet, me donnant en conclusion la gratification d'avoir réussi mon projet ainsi que mon stage.
-
-
-
-
-
-
-
-
-
-
