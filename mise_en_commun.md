@@ -1,7 +1,11 @@
 # Sommaire
 
-[TOC]
-
+- [Introduction](#introduction)
+- [Section 1](#section-1)
+  - [Sous-section 1.1](#sous-section-1-1)
+  - [Sous-section 1.2](#sous-section-1-2)
+- [Section 2](#section-2)
+- [Conclusion](#conclusion)
 
 # INTRODUCTION 
 
