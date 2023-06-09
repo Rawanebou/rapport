@@ -15,20 +15,6 @@
 5. [ROOM 42](#room)
 5. [CONCLUSION](#conclusion)
 
-<a name="remerciement"></a>
-<a name="organisation"></a>
-<a name="secteur"></a>
-<a name="service"></a>
-<a name="methode"></a>
-<a name="projet"></a>
-<a name="outil"></a>
-<a name="explication"></a>
-<a name="misp"></a>
-<a name="mispv"></a>
-<a name="packer"></a>
-<a name="apport"></a>
-<a name="room"></a>
-<a name="conclusion"></a>
 
 
 # INTRODUCTION <a name="introduction"></a> 
